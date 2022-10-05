@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/filtro.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+    <title>Open Music</title>
+  </head>
+  <body>
+    <main class="container">
+      
+      <header class="flex-center-spacebetween">
+        <h1>open music</h1>
+        <div id="theme-button" class="radius1 flex-center-center">
+          <img id="theme-icon" src="./assets/img/moon.png" alt="imagem de uma lua crescente">
+        </div>
+      </header>
+      
+      <section class="filtro">
+        <h2>Gênero Musical</h2>
+        <ul class="flex" id="lista-generos">
+          
+        </ul>
+        <div class="flex-center-spacebetween">
+          <h2>Definir preço</h2>
+          <h2 class="precoMax">Até R$</h2>
+        </div>
+        <input type="range" class="filtro-preco">
+      </section>
+
+      <section class="albuns">
+        <h2>Albums Encontrados</h2>
+        <ul class="lista-albuns">
+
+        </ul>
+      </section>
+
+    </main>
+    <script src="./scripts/theme.js"></script>
+    <script src="./scripts/productsData.js"></script>
+    <script src="./scripts/criarCard.js"></script>
+    <script src="./scripts/filtro.js"></script>
+    <script src="./scripts/botoesFiltro.js"></script>
+    <script src="./scripts/filtroPrecos.js"></script>
+  </body>
+</html>

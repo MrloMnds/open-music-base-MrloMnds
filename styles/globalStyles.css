@@ -31,6 +31,24 @@
   --container: 45rem;
 }
 
+.dark-mode:root {
+  --color-brand-1:#9747ff;
+  --color-grey-0: #F8F9FA;
+  --color-grey-1: #f1f3f5;
+  --color-grey-2: #dee2e6;
+  --color-grey-3: #ced4da;
+  --color-grey-4: #adb5bd;
+  --color-grey-5: #868e96;
+  --color-grey-6: #868E96;
+  --color-grey-7: #2b2f33;
+  --color-grey-8: #212529;
+  --color-grey-9: #15171a;
+
+  --color-disable-fixed: #212529;
+  --color-actived-fixed: #2b2f33;
+  --color-white-fixed: #ffffff;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -38,9 +56,46 @@ body {
   background-color: var(--color-grey-9);
 }
 
+h1 {
+  font-size: var(--font-1);
+  font-weight: 600;
+}
+h2 {
+  font-size: var(--font-2);
+  font-weight: 600;
+}
+h3 {
+  font-size: var(--font-3);
+  font-weight: 600;
+}
+p {
+  font-size: var(--font-3);
+  font-weight: 500;
+}
+h1, h2, h3, p, li, button {
+  color: var(--color-grey-0);
+}
+
 .container {
   width: var(--container);
   max-width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+.flex-center-spacebetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radius1 {
+  border-radius: var(--radius-1);
 }

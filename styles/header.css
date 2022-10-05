@@ -1,0 +1,11 @@
+.container > header {
+    margin: 50px 0px;
+}
+.container>header>div {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-grey-7);
+}
+.container>header>div:hover {
+    cursor: pointer;
+}
